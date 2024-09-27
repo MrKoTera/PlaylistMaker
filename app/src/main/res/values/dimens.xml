@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_buttons_text">22sp</dimen>
+    <dimen name="main_buttons_corner">22dp</dimen>
+    <dimen name="main_buttons_padding">8dp</dimen>
+
+    <dimen name="text_menu_item">16sp</dimen>
+    <dimen name="padding_menu_item">40dp</dimen>
+    <dimen name="layout_height_settings">60dp</dimen>
+    <dimen name="drawable_padding_settings">8dp</dimen>
+</resources>
