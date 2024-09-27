@@ -7,23 +7,29 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".SettingsActivity">
+    android:background="@android:color/white">
 
     <LinearLayout
-        style="@style/BackButtonWithTitle">
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="24dp">
 
         <ImageView
             android:id="@+id/backSettings"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/back_arrow"
-            app:tint="?attr/colorOnPrimary" />
+            android:src="@drawable/back_arrow" />
 
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            style="@style/TitleText"
-            android:text="Настройки"
-            android:textColor="?attr/colorOnPrimary" />
+            android:text="@string/title_settings"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
     </LinearLayout>
 
     <LinearLayout
@@ -38,7 +44,7 @@
             android:layout_weight="1"
             android:text="@string/dark_theme"
             android:textSize="@dimen/text_menu_item"
-            android:textColor="?attr/colorOnPrimary" />
+            android:textColor="@android:color/black" />
 
         <Switch
             android:layout_width="48dp"
@@ -50,27 +56,33 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/button_share_app"
         android:layout_width="match_parent"
-        style="@style/SettingsMenuItem"
+        android:layout_height="@dimen/layout_height_settings"
+        android:gravity="center_vertical"
         android:text="@string/share_app"
-        app:drawableEndCompat="@drawable/share"
-        android:textColor="?attr/colorOnPrimary" />
+        android:textSize="@dimen/text_menu_item"
+        android:textColor="@android:color/black"
+        android:drawablePadding="@dimen/drawable_padding_settings"
+        app:drawableEndCompat="@drawable/share" />
 
     <TextView
-        android:id="@+id/button_support"
         android:layout_width="match_parent"
-        style="@style/SettingsMenuItem"
+        android:layout_height="@dimen/layout_height_settings"
+        android:gravity="center_vertical"
         android:text="@string/support"
-        app:drawableEndCompat="@drawable/support"
-        android:textColor="?attr/colorOnPrimary" />
+        android:textSize="@dimen/text_menu_item"
+        android:textColor="@android:color/black"
+        android:drawablePadding="@dimen/drawable_padding_settings"
+        app:drawableEndCompat="@drawable/support" />
 
     <TextView
-        android:id="@+id/button_terms"
         android:layout_width="match_parent"
-        style="@style/SettingsMenuItem"
+        android:layout_height="@dimen/layout_height_settings"
+        android:gravity="center_vertical"
         android:text="@string/terms"
-        app:drawableEndCompat="@drawable/forward_arrow"
-        android:textColor="?attr/colorOnPrimary" />
+        android:textSize="@dimen/text_menu_item"
+        android:textColor="@android:color/black"
+        android:drawablePadding="@dimen/drawable_padding_settings"
+        app:drawableEndCompat="@drawable/forward_arrow" />
 
 </LinearLayout>
