@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".SearchActivity">
+
+    <LinearLayout
+        style="@style/BackButtonWithTitle">
+
+        <ImageView
+            android:id="@+id/backSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_arrow"
+            app:tint="?attr/colorOnPrimary" />
+
+        <TextView
+            android:layout_marginStart="32dp"
+            style="@style/TitleText"
+            android:text="@string/search"
+            android:textColor="?attr/colorOnPrimary" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/search_input_text"
+        android:textColorHint="@color/search_input_text"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:paddingStart="12dp"
+        android:hint="@string/search"
+        android:maxLines="1"
+        android:inputType="text"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/search"
+        android:background="@drawable/search_background" />
+
+    <TextView
+        android:id="@+id/clearSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset_search"
+        android:textSize="16sp"
+        android:textColor="@color/search_input_text"
+        android:visibility="gone"
+        android:padding="8dp" />
+
+</LinearLayout>
