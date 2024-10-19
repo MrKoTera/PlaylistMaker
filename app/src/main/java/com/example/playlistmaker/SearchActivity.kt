@@ -16,6 +16,10 @@ class SearchActivity : AppCompatActivity() {
 
     private var searchText: String = ""
 
+    companion object {
+        private const val KEY_SEARCH_TEXT = "SEARCH_TEXT" // Константа для ключа
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_search)
@@ -25,7 +29,7 @@ class SearchActivity : AppCompatActivity() {
         clearSearchButton = findViewById(R.id.clearSearch)
 
         if (savedInstanceState != null) {
-            searchText = savedInstanceState.getString("SEARCH_TEXT", "")
+            searchText = savedInstanceState.getString(KEY_SEARCH_TEXT, "")
             searchEditText.setText(searchText)
         }
 
@@ -53,12 +57,12 @@ class SearchActivity : AppCompatActivity() {
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
-        outState.putString("SEARCH_TEXT", searchText)
+        outState.putString(KEY_SEARCH_TEXT, searchText)
     }
 
     override fun onRestoreInstanceState(savedInstanceState: Bundle) {
         super.onRestoreInstanceState(savedInstanceState)
-        searchText = savedInstanceState.getString("SEARCH_TEXT", "")
+        searchText = savedInstanceState.getString(KEY_SEARCH_TEXT, "")
         searchEditText.setText(searchText)
     }
 
