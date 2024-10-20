@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 class SearchActivity : AppCompatActivity() {
     private lateinit var searchEditText: EditText
-    private lateinit var clearSearchButton: TextView
+    private lateinit var clearSearchButton: ImageView
 
     private var searchText: String = ""
 
