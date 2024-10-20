@@ -13,14 +13,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //enableEdgeToEdge()
-
         val searchButton = findViewById<Button>(R.id.buttonSearch)
         searchButton.setOnClickListener {
             val intent = Intent(this, SearchActivity::class.java)
             startActivity(intent)
         }
-
+        
         val mediaButton = findViewById<Button>(R.id.buttonMedia)
         mediaButton.setOnClickListener {
             val intent = Intent(this, MediaActivity::class.java)
