@@ -17,6 +17,8 @@
         </intent>
     </queries>
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -52,7 +54,7 @@
 
         <activity
             android:name=".SearchActivity"
-            android:theme="@style/SettingsActivityTheme"
+            android:theme="@style/SearchActivityTheme"
             android:exported="true">
         </activity>
     </application>

@@ -10,7 +10,7 @@
     tools:context=".SearchActivity">
 
     <LinearLayout
-        style="@style/BackButtonWithTitle">
+        style="@style/BackButtonWithTitleSearch">
 
         <ImageView
             android:id="@+id/backSearch"
@@ -29,14 +29,14 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+        android:layout_marginTop="8dp">
 
         <EditText
             android:id="@+id/searchEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingEnd="32dp"
-            android:textColor="@color/search_input_text"
+            android:textColor="@color/search_input_search"
             android:textColorHint="@color/search_input_text"
             android:textSize="16sp"
             android:padding="8dp"
@@ -62,4 +62,11 @@
             android:clickable="true"
             android:focusable="false" />
     </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:clipToPadding="false" />
 </LinearLayout>
