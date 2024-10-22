@@ -12,4 +12,10 @@
         <item name="colorOnPrimary">@color/white</item>
     </style>
 
+    <style name="SearchActivityTheme" parent="Base.Theme.PlaylistMaker">
+        <item name="android:background">@color/background_search</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/subtitle_item_search</item>
+    </style>
+
 </resources>
